@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <script src="./js/main.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+   <header>
+        <div class="container">
+            <div class="row h-100 align-items-center">
+                <div class="col">
+                    Second test app
+                </div>
+            </div>
+        </div>
+   </header> 
+
+   <section class="main">
+        <div class="container d-flex justify-content-center">
+            <form>
+                <div class="row from-group">
+                    <label class="col-4 form-label" for="firstName">First Name</label> 
+                    <div class="col">
+                        <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                    </div>
+                </div>
+
+                <div class="row from-group">
+                    <label class="col-4 form-label" for="lastName">Last Name</label> 
+                    <div class="col">
+                        <input type="text" class="form-control" id="lastName" placeholder="Last Name">   
+                    </div>
+                </div>
+
+                <div class="row from-group">
+                    <label class="col-4 form-label" for="middleName">Middle Name</label> 
+                    <div class="col">
+                        <input type="text" class="form-control" id="middleName" placeholder="Middle Name">
+                    </div>
+                </div>
+
+                <div class="row from-group">
+                    <label class="col-5 form-label" for="transmission">Date of transmission</label> 
+                    <div class="col">
+                        <input type="text" class="form-control" id="transmission" placeholder="dd.mm.yyyy">
+                    </div>
+                </div>
+
+                <div class="row from-group">
+                    <label class="col-5 form-label" for="arrival">Date of arrival</label> 
+                    <div class="col">
+                        <input type="text" class="form-control" id="arrival" placeholder="dd.mm.yyyy">
+                    </div>
+                </div>
+
+                <div class="row from-group">
+                    <label class="col-5 form-label" for="distance">Distance</label> 
+                    <div class="col">
+                        <input type="text" class="form-control" id="distance" placeholder="0km">
+                    </div>
+                </div>
+
+                <div class="row from-group">
+                    <label class="col-5 form-label" for="cost">Cost per kilometer</label> 
+                    <div class="col">
+                        <input type="text" class="form-control" id="cost" placeholder="0,00₴">
+                    </div>
+                </div>
+
+                <div class="row from-check">
+                    <label class="col-4 form-check-label" for="delivery">Delivery</label> 
+                    <div class="col">
+                        <input onchange="deliveryCheck();"type="checkbox" class="form-check-input" id="delivery">
+                    </div>
+                </div>
+
+                <div class="row from-check">
+
+                        <label class="col-4 form-check-label" for="toadress">To home</label> 
+                        <div class="col-2">
+                            <input type="radio" class="form-check-input" name="delivery" id="toadress" disabled>
+                        </div>
+
+                        <label class="col-4 form-check-label" for="todepartment" `${console.log(check);}`>To department</label> 
+                        <div class="col-2">
+                            <input type="radio" class="form-check-input" name="delivery" id="todepartment" disabled>
+                        </div>
+                </div>
+                
+                <input onclick="calculate();" type="button" class="col btn" value="Calculate">
+            </form>
+        </div>
+   </section>
+
+   <footer>
+        <div class="container">
+            <div class="row h-100 justify-content-end align-items-center">
+                <div class="col-6">
+                        Feedback: david.barabash.2000@gmail.com
+                </div>
+            </div>
+        </div>
+   </footer>
+</body>
+</html>
