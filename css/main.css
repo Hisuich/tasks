@@ -39,7 +39,7 @@ header {
 
 .main .row {
     overflow: hidden;
-    transition: height 1s;
+    transition: max-height 1s;
 }
 
 footer {
